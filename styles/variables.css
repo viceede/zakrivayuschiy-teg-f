@@ -1,1 +1,19 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  /* Акцентный шрифт */
+  --accent-font: PressStart2P-Regular;
+  --accent-heading-font-size: 49px;
+  --accent-font-size: 14px;
+  --accent-line-height: 90%;
+  
+  /* Основной шрифт */
+  --main-font: Inter-Variable;
+  --main-font-size: 18px;
+  --main-font-weight-thin: 410;
+  --main-font-weight-thick: 715;
+  --main-font-line-height: 21px;
+
+  /* Цвета */
+  --text-color: #000;
+  --component-bg-color: #fff;
+}

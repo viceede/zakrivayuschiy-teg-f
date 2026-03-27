@@ -1,1 +1,1 @@
-https://github.com/viceede/zakrivayuschiy-teg-f.git
+TODO: добавить ссылку
