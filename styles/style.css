@@ -83,6 +83,8 @@
   position: absolute;
   top: 25px;
   right: 25px;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
 }
 
 @supports (text-stroke: 1px var(--text-stroke-color)) or (-webkit-text-stroke: 1px var(--text-stroke-color)){
@@ -99,5 +101,32 @@
   flex-direction: column;
   gap: 25px;
   padding: var(--card-content-padding);
+}
+
+.card__tools {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 12px;
+}
+
+.card__icon-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card__like-button {
+  inline-size: 130px;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.button__text {
+  display: inline-block;
+  padding: 7px 0;
+  font-family: var(--accent-font);
+  font-size: var(--accent-font-size);
 }
 
