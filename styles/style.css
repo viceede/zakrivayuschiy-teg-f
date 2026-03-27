@@ -13,4 +13,34 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: 'wght' var(--main-font-weight-thin), 'slnt' 0;
+  font-size: var(--main-font-size);
+  line-height: var(--main-font-line-height);
+  background-image: var(--bg-gradient);
+  object-fit: cover;
+  background-attachment: fixed;
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-block-size: 327px;
+  margin: 100px 0;
+  background-color: var(--component-bg-color);
+  border: 2px solid #000;
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+}
+
+.header__title {
+  font-size: var(--accent-heading-font-size);
+  line-height: var(--accent-heading-font-size);
+}
+.header__subtitle {
+  font-size: var(--accent-font-size);
+}
+
