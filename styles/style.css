@@ -12,14 +12,16 @@
 
 .page {
   min-inline-size: 320px;
+  max-inline-size: 700px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: 'wght' var(--main-font-weight-thin), 'slnt' 0;
+  font-variation-settings: 'wght' var(--main-font-weight-thin);
   font-size: var(--main-font-size);
   line-height: var(--main-font-line-height);
   background-image: var(--bg-gradient);
   object-fit: cover;
   background-attachment: fixed;
+  margin: 0 auto;
 }
 
 .header {
@@ -28,8 +30,8 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  min-block-size: 327px;
-  margin: 100px 0;
+  min-block-size: var(--header-height);
+  margin: var(--outer-margin) 0;
   background-color: var(--component-bg-color);
   border: 2px solid #000;
   font-family: var(--accent-font);
@@ -41,6 +43,61 @@
   line-height: var(--accent-heading-font-size);
 }
 .header__subtitle {
+  font-size: var(--accent-subheading-font-size);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--main-section-gap);
+}
+.card {
+  background-color: var(--component-bg-color);
+  border: 2px solid var(--primary-color);
+}
+.card__header {
+  font-size: var(--main-font-size);
+  font-variation-settings: 'wght' var(--main-font-weight-thick);
+  padding: var(--subheading-padding);
+}
+
+.card__image-container {
+  position: relative;
+}
+
+.card__image {
+  inline-size: 100%;
+  border-top: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);;
+}
+
+.card__watermark {
+  font-family: var(--accent-font);
   font-size: var(--accent-font-size);
+  text-transform: uppercase;
+  text-shadow: 
+    -1px 0px var(--text-stroke-color),
+    0px -1px var(--text-stroke-color),
+    0px 1px var(--text-stroke-color),
+    1px 0px var(--text-stroke-color);
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+@supports (text-stroke: 1px var(--text-stroke-color)) or (-webkit-text-stroke: 1px var(--text-stroke-color)){
+  .card__watermark {
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    text-stroke: 1px var(--text-stroke-color);
+    text-shadow: none;
+  }
+
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: var(--card-content-padding);
 }
 
