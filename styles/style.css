@@ -162,6 +162,14 @@
 	padding-bottom: 0;
 }
 
+.svg-floppy_change-color {
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+	mix-blend-mode: difference;
+	color: var(--component-bg-color);
+}
+
 .save-dialog[open] {
 	padding: 30px 40px;
 	margin-inline: 17px;
@@ -180,6 +188,7 @@
 
 .save-dialog__info {
 	display: grid;
+	grid-template-rows: min-content;
 	grid-template-columns: min-content 1fr;
 	column-gap: 20px;
 	margin-bottom: 30px;
