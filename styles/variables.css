@@ -33,4 +33,10 @@
   
   /* Высота шапки */
   --header-height: clamp(327px, 3.85vw + 312.56px, 368px);
+
+  /* Сердце */
+  --contour-color: #000;
+  --main-body-color: red;
+  --core-color: #fff;
+  --sparks-color: red;
 }
