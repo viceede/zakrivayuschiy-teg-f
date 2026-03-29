@@ -59,6 +59,7 @@
 	background-color: var(--component-bg-color);
 	border: 2px solid var(--primary-color);
 }
+
 .card__header {
 	font-size: var(--main-font-size);
 	font-variation-settings: 'wght' var(--main-font-weight-thick);
@@ -69,10 +70,45 @@
 	position: relative;
 }
 
+
+
 .card__image {
 	inline-size: 100%;
 	border-top: 2px solid var(--primary-color);
 	border-bottom: 2px solid var(--primary-color);
+}
+
+.card__image_glasses-cat {
+	filter: 
+		brightness(0.7);
+}
+
+.card__image_megumi-fushiguro-toy {
+	  filter: sepia(0.5);
+}
+
+.card__image_japan-torii-sakura {
+	filter: saturate(1.5);
+}
+
+.card__image_aki-hayakawa {
+	filter: invert(100%);
+}
+
+.card__image_car {
+	filter: grayscale(0.5);
+}
+
+.card__image_cat-headphones {
+	filter: hue-rotate(31deg);
+}
+
+.card__image_street {
+	filter: saturate(180%) opacity(85%);
+}
+
+.card__image_kitten {
+	filter: contrast(0.65);
 }
 
 .card__watermark {
@@ -87,6 +123,7 @@
 	right: 25px;
 	opacity: 0.5;
 	mix-blend-mode: hard-light;
+	z-index: 1;
 }
 
 @supports (text-stroke: 1px var(--text-stroke-color)) or
@@ -103,6 +140,11 @@
 	flex-direction: column;
 	gap: 25px;
 	padding: var(--card-content-padding);
+}
+
+.card__text {
+	text-wrap: balance;
+	letter-spacing: 0.2px;
 }
 
 .card__tools {
@@ -324,6 +366,10 @@
 }
 
 @media (width > 375px) {
+	.card__text {
+		text-wrap: wrap;
+	}
+
 	.save-button {
 		block-size: 55px;
 		max-inline-size: 335px;
