@@ -381,7 +381,7 @@
 	}
 
 	.save-button .button__text {
-		padding-bottom: 7px;
+		padding-top: 5px;
 	}
 
 	.save-dialog[open] {
