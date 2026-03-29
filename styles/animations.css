@@ -11,21 +11,21 @@
 */
 
 @keyframes heart-scale {
-  0% {
-    scale: 1;
-  }
+	0% {
+		scale: 1;
+	}
 
-  50% {
-    scale: 1.25;
-  }
+	50% {
+		scale: 1.25;
+	}
 }
 
 @keyframes heart-sparkle {
-  0% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
 
-  50% {
-    opacity: 1;
-  }
+	50% {
+		opacity: 1;
+	}
 }

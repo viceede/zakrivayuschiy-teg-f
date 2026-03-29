@@ -70,8 +70,6 @@
 	position: relative;
 }
 
-
-
 .card__image {
 	inline-size: 100%;
 	border-top: 2px solid var(--primary-color);
@@ -79,12 +77,11 @@
 }
 
 .card__image_glasses-cat {
-	filter: 
-		brightness(0.7);
+	filter: brightness(0.7);
 }
 
 .card__image_megumi-fushiguro-toy {
-	  filter: sepia(0.5);
+	filter: sepia(0.5);
 }
 
 .card__image_japan-torii-sakura {
@@ -161,21 +158,21 @@
 }
 
 .button__text {
-  mix-blend-mode: difference;
-  color: var(--component-bg-color);
+	mix-blend-mode: difference;
+	color: var(--component-bg-color);
 	display: inline-block;
 	padding: 7px 0;
-  position: relative;
-  z-index: 2;
+	position: relative;
+	z-index: 2;
 }
 
 .card__icon-button {
 	padding: 3px 8px 0 0;
 	background-color: transparent;
 	border: none;
-  outline: 2px solid transparent;
-  outline-offset: -5px;
-  transition: outline 0.3s ease;
+	outline: 2px solid transparent;
+	outline-offset: -5px;
+	transition: outline 0.3s ease;
 }
 
 .heart {
@@ -252,10 +249,10 @@
 
 .card__like-button {
 	inline-size: 130px;
-  box-shadow: 1px 1px 0 1px transparent;
-  transition: box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
+	box-shadow: 1px 1px 0 1px transparent;
+	transition: box-shadow 0.3s ease;
+	position: relative;
+	overflow: hidden;
 }
 
 .save-button {
@@ -265,10 +262,10 @@
 	justify-content: center;
 	block-size: 84px;
 	margin: 0 34.5px 100px;
-  box-shadow: 1px 1px 0 1px transparent;
-  transition: box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
+	box-shadow: 1px 1px 0 1px transparent;
+	transition: box-shadow 0.3s ease;
+	position: relative;
+	overflow: hidden;
 }
 
 .save-button .button__text {
@@ -317,18 +314,18 @@
 
 .ok-button {
 	inline-size: 100%;
-  box-shadow: 1px 1px 0 1px transparent;
-  transition: box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
+	box-shadow: 1px 1px 0 1px transparent;
+	transition: box-shadow 0.3s ease;
+	position: relative;
+	overflow: hidden;
 }
 
 .card__icon-button:focus {
-  outline: 0;
+	outline: 0;
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--primary-color);
+	outline: 2px solid var(--primary-color);
 }
 
 .card__like-button:focus,
@@ -347,22 +344,21 @@
 .card__like-button::after,
 .save-button::after,
 .ok-button::after {
-  display: block;
-  content: '';
-  background-color: var(--primary-color);
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out;
+	display: block;
+	content: '';
+	background-color: var(--primary-color);
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateX(-100%);
+	transition: transform 0.5s ease-in-out;
 }
 
 .card__like-button:hover::after,
 .save-button:hover::after,
 .ok-button:hover::after {
-  transform: translateX(0);
-
+	transform: translateX(0);
 }
 
 @media (width > 375px) {
