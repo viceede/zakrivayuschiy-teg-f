@@ -14,7 +14,7 @@
 	min-inline-size: 320px;
 	max-inline-size: 700px;
 	min-block-size: 100dvb;
-	font-family: var(--main-font), sans-serif;
+	font-family: var(--main-font), 'Arial', sans-serif;
 	font-variation-settings: 'wght' var(--main-font-weight-thin);
 	font-size: var(--main-font-size);
 	line-height: var(--main-font-line-height);
@@ -25,7 +25,7 @@
 }
 
 .accent-text {
-	font-family: var(--accent-font);
+	font-family: var(--accent-font), 'Arial', sans-serif;
 	font-size: var(--accent-font-size);
 }
 
@@ -74,6 +74,7 @@
 	inline-size: 100%;
 	border-top: 2px solid var(--primary-color);
 	border-bottom: 2px solid var(--primary-color);
+	max-block-size: 700px;
 }
 
 .card__image_glasses-cat {
@@ -139,16 +140,12 @@
 	padding: var(--card-content-padding);
 }
 
-.card__text {
-	text-wrap: balance;
-	letter-spacing: 0.2px;
-}
-
 .card__tools {
 	block-size: 38px;
 	display: flex;
 	align-items: center;
 	justify-content: end;
+	margin-bottom: 5px;
 }
 
 .button {
@@ -164,10 +161,11 @@
 	padding: 7px 0;
 	position: relative;
 	z-index: 2;
+	padding-top: 8px;
 }
 
 .card__icon-button {
-	padding: 3px 8px 0 0;
+	padding: 3px 6px 0 0;
 	background-color: transparent;
 	border: none;
 	outline: 2px solid transparent;
@@ -362,6 +360,7 @@
 }
 
 @media (width > 375px) {
+
 	.card__text {
 		text-wrap: wrap;
 	}
