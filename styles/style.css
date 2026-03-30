@@ -358,7 +358,6 @@
 }
 
 @media (width > 375px) {
-
 	.card__text {
 		text-wrap: wrap;
 	}
