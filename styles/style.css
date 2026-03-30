@@ -42,7 +42,11 @@
 	text-transform: uppercase;
 }
 
-.header__title {
+.header__logo {
+	text-decoration: none;
+}
+
+.header__logo-title {
 	font-size: var(--accent-heading-font-size);
 	line-height: var(--accent-heading-font-size);
 }
@@ -341,6 +345,7 @@
 	transition: box-shadow 0.3s ease;
 	position: relative;
 	overflow: hidden;
+	text-transform: uppercase;
 }
 
 .card__icon-button:focus {
@@ -360,7 +365,6 @@
 
 	.save-button {
 		block-size: 55px;
-		max-inline-size: 335px;
 		margin: 0 auto 100px;
 		flex-direction: row;
 		padding: 0 20px;
@@ -369,7 +373,7 @@
 	}
 
 	.save-button .button__text {
-		padding-top: 5px;
+		padding-top: 4px;
 	}
 
 	.save-dialog[open] {
