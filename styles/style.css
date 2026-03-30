@@ -154,6 +154,31 @@
 	cursor: pointer;
 }
 
+.button:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
+.button:focus-visible {
+	box-shadow: 1px 1px 0 1px var(--primary-color);
+}
+
+.button::after {
+	display: block;
+	content: '';
+	background-color: var(--primary-color);
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateX(-100%);
+	transition: transform 0.5s ease-in-out;
+}
+
+.button:hover::after {
+	transform: translateX(0);
+}
+
 .button__text {
 	mix-blend-mode: difference;
 	color: var(--component-bg-color);
@@ -324,39 +349,7 @@
 
 .card__icon-button:focus-visible {
 	outline: 2px solid var(--primary-color);
-}
-
-.card__like-button:focus,
-.save-button:focus,
-.ok-button:focus {
-	outline: 0;
 	box-shadow: none;
-}
-
-.card__like-button:focus-visible,
-.save-button:focus-visible,
-.ok-button:focus-visible {
-	box-shadow: 1px 1px 0 1px var(--primary-color);
-}
-
-.card__like-button::after,
-.save-button::after,
-.ok-button::after {
-	display: block;
-	content: '';
-	background-color: var(--primary-color);
-	position: absolute;
-	inset: 0;
-	width: 100%;
-	height: 100%;
-	transform: translateX(-100%);
-	transition: transform 0.5s ease-in-out;
-}
-
-.card__like-button:hover::after,
-.save-button:hover::after,
-.ok-button:hover::after {
-	transform: translateX(0);
 }
 
 @media (width > 375px) {
