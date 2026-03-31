@@ -68,6 +68,7 @@
 	font-size: var(--main-font-size);
 	font-variation-settings: 'wght' var(--main-font-weight-thick);
 	padding: var(--subheading-padding);
+	line-height: var(--main-font-heading-line-height);
 }
 
 .card__image-container {
@@ -81,35 +82,35 @@
 	max-block-size: 700px;
 }
 
-.card__image_glasses-cat {
+.card__image_filter-brightness {
 	filter: brightness(0.7);
 }
 
-.card__image_megumi-fushiguro-toy {
+.card__image_filter-sepia {
 	filter: sepia(0.5);
 }
 
-.card__image_japan-torii-sakura {
+.card__image_filter-saturate {
 	filter: saturate(1.5);
 }
 
-.card__image_aki-hayakawa {
+.card__image_filter-invert {
 	filter: invert(100%);
 }
 
-.card__image_car {
+.card__image_filter-grayscale {
 	filter: grayscale(0.5);
 }
 
-.card__image_cat-headphones {
+.card__image_filter-hue-rotate {
 	filter: hue-rotate(31deg);
 }
 
-.card__image_street {
+.card__image_filter-saturate-opacity {
 	filter: saturate(180%) opacity(85%);
 }
 
-.card__image_kitten {
+.card__image_filter-contrast {
 	filter: contrast(0.65);
 }
 
@@ -149,7 +150,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: end;
-	margin-bottom: 5px;
+	gap: 6px;
 }
 
 .button {
@@ -194,11 +195,12 @@
 }
 
 .card__icon-button {
-	padding: 3px 6px 0 0;
+	block-size: 36px;
+	padding: 0;
 	background-color: transparent;
 	border: none;
 	outline: 2px solid transparent;
-	outline-offset: -5px;
+	outline-offset: -2px;
 	transition: outline 0.3s ease;
 }
 
@@ -293,9 +295,11 @@
 	transition: box-shadow 0.3s ease;
 	position: relative;
 	overflow: hidden;
+	gap: 8px;
 }
 
 .save-button .button__text {
+	padding-top: 0;
 	padding-bottom: 0;
 }
 
@@ -366,13 +370,13 @@
 		block-size: 55px;
 		margin: 0 auto 100px;
 		flex-direction: row;
-		padding: 0 20px;
+		padding: 0 18px;
 		text-wrap: nowrap;
-		gap: 8px;
 	}
 
-	.save-button .button__text {
-		padding-top: 4px;
+	.svg-floppy_change-color {
+		width: 21px;
+		height: 21px;
 	}
 
 	.save-dialog[open] {
